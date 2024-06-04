@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <video id="video" src=""
+        autoplay muted loop></video>
+   
+
+    <script>
+
+        // Array of video URLs
+
+        const videos = ["https://mylivewallpapers.com/wp-content/uploads/Anime/PREVIEW-Hatsune-Miku-Beach-1.mp4", "https://mylivewallpapers.com/wp-content/uploads/Lifestyle/PREVIEW-Starry-Blue-Night.mp4"]
+
+
+
+
+        // Function to shuffle the array
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
+
+        // Function to change video source
+        function changeVideoSource() {
+            // Shuffle the videos array
+            shuffleArray(videos);
+            // Get the video element
+            const videoPlayer = document.getElementById('video');
+            // Set the shuffled video URL to the video player
+            videoPlayer.src = videos[0];
+        }
+
+        // Call changeVideoSource function when the page loads
+        window.onload = changeVideoSource;
+
+
+
+
+    </script>
+
+</body>
+
+</html>
