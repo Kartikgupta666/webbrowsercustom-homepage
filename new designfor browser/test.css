@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    position: sticky;
+
+}
+
+.list ul {
+    display: flex;
+}
+
+.list ul li {
+    list-style: none;
+    margin: 10px;
+    font-size: 12px;
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 100px;
+    border-color: transparent;
+    background-image: linear-gradient(to right, #B476D3, #EC8A91);
+    color: white;
+}
+
+.btn:hover {
+    background-image: linear-gradient(to left, #B476D3, #EC8A91);
+    color: black;
+}
+
+.btn1 {
+    padding: 12px 24px;
+    border-radius: 100px;
+    border-color: transparent;
+    color: #EC8A91;
+    background-color: transparent;
+
+}
+
+.btn1:hover {
+    color: white;
+    transition: all ease-out 2s;
+}
+
+.hero {
+    display: flex;
+    color: white;
+    background-color: #151218;
+    height: 100vh;
+    width: 250vh;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 400px;
+    /* justify-content: space-between; */
+}
+
+.hero-text {
+    height: 500px;
+    width: 500px;
+    /* border: 1px solid white; */
+
+
+}
+
+
+.hero-text h1 {
+    font-size: 50px;
+    margin-top: 100px;
+    margin-left: 50px;
+
+}
+
+.hero-text p {
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 15px;
+}
+
+.hero img {
+    position: relative;
+    height: 400px;
+    width: 600px;
+    margin-left: 10vw;
+
+}
+
+.span {
+    /* background-image: ; */
+    color: #B476D3;
+}
+
+.getstarted {
+    padding: 0.8em 1.8em;
+    border: 2px solid #EC8A91;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    background-image: linear-gradient(to right, #B476D3, #EC8A91);
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: transparent;
+    border-radius: 100px;
+    top: 40px;
+    margin-left: 50px;
+}
+
+.getstarted::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background-image: linear-gradient(to right, #B476D3, #EC8A91);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.getstarted:hover::before {
+    width: 105%;
+}
+
+.getstarted:hover {
+    color: white;
+}
+
+
+.questions h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.row {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    height: 200px;
+    width: 200px;
+    gap: 2px;
+    background-color: #F1E9FC;
+}
+
+.card i {
+    margin-top: 2px;
+    font-size: 50px;
+    color: transparent;
+    background-image: linear-gradient(to right, #B476D3, #EC8A91);
+    background-clip: text;
+}
+
+.card h2 {
+    font-weight: 500;
+    font-size: large;
+}
+
+.card p {
+    font-size: 12px;
+
+}
+
+marquee ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+marquee:hover {
+    behavior: dotted;
+}
